@@ -100,6 +100,7 @@
       <div>
         <div class="example">
           <button onclick="window.open('https://app.thestorygraph.com', '_blank')">Storygraph</button>
+          <button onclick="window.open('https://linktr.ee/admin', '_blank')">Linktree</button>
         </div>
       </div>
     </section>
@@ -110,9 +111,13 @@
           <button onclick="window.open('https://scholar.google.com', '_blank')">Scholar</button>
           <button onclick="window.open('https://sci-hub.scrongyao.com/', '_blank')">Sci-hub</button>
           <button onclick="window.open('https://annas-archive.org/', '_blank')">Annas-archive</button>
-          <button onclick="window.open('https://libstc.cc/', '_blank')">LibSTC</button><br>
+          <button onclick="window.open('https://libstc.cc/', '_blank')">LibSTC</button>
+          <br>
           <button onclick="window.open('https://www.chat.openai.com', '_blank')">ChatGPT</button>
-          <button onclick="window.open('https://notebooklm.google/', '_blank')">NotebookLM</button><br>
+          <button onclick="window.open('https://notebooklm.google/', '_blank')">NotebookLM</button>
+          <button onclick="window.open('https://www.deepl.com/en/translator', '_blank')">DeepL</button>
+          <button onclick="window.open('https://app.grammarly.com/', '_blank')">Grammarly</button>
+          <br>
           <button onclick="window.open('https://www.perplexity.ai', '_blank')">Perplexity</button>
           <button onclick="window.open('https://www.twitch.tw', '_blank')">Consensus</button>
           <button onclick="window.open('https://typeset.io/', '_blank')">Scispace</button>
@@ -129,7 +134,12 @@
           <button onclick="window.open('https://archive.md/', '_blank')">Archive</button>
           <button onclick="window.open('https://typeset.io/', '_blank')">Scispace</button>
           <button onclick="window.open('https://www.downloadfreescribd.com/', '_blank')">Scribd_dl</button>
+          <button onclick="window.open('https://cobalt.tools/', '_blank')">Cobalt</button>
           <button onclick="window.open('https://www.overleaf.com/learn/latex/Mathematical_expressions', '_blank')">LaTeX</button>
+          <button onclick="window.open('https://send-anywhere.com/', '_blank')">Send-Any</button>
+          <button onclick="window.open('https://www.swisstransfer.com/en-ch', '_blank')">Swiss-trans</button>
+
+
           <details>
             <summary>Show code</summary>
             <pre><code><span class="hljs-tag">hello</span></code></pre>
@@ -137,147 +147,6 @@
         </div>
       </div>
     </section
-
-
-    <section class="component">
-      <h3 id="tree-view">TreeView</h3>
-      <div>
-        <blockquote>
-          A <em>tree view control</em> is a special list box control
-          that displays a set of objects as an indented outline based
-          on their logical hierarchical relationship.
-
-          <footer>
-            &mdash; Microsoft Windows User Experience p. 178
-          </footer>
-        </blockquote>
-
-        <p>
-          To render a tree view, use an <code>ul</code> element with the
-          <code>tree-view</code> class. The children of this list (<code>li</code>
-          elements), can contain whatever you'd like.
-        </p>
-
-        <div class="example">
-      <ul class="tree-view">
-  <li>We can put</li>
-  <li><strong style="color: purple">✨ Whatever ✨</strong></li>
-  <li>We want in here</li>
-</ul>
-      <details>
-        <summary>Show code</summary>
-        <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tree-view&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>We can put<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: purple&quot;</span>&gt;</span>✨ Whatever ✨<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>We want in here<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
-      </details>
-    </div>
-
-        <p>
-          To make this a tree, we can nest further <code>ul</code> elements
-          (no class needed on these). This will provide them with a nice dotted
-          border and indentation to illustrate the structure of the tree.
-        </p>
-        <p>
-          To create expandable sections, wrap child lists inside of
-          <code>details</code> elements.
-        </p>
-
-        <div class="example">
-      <ul class="tree-view">
-  <li>Table of Contents</li>
-  <li>What is web development?</li>
-  <li>
-    CSS
-    <ul>
-      <li>Selectors</li>
-      <li>Specificity</li>
-      <li>Properties</li>
-    </ul>
-  </li>
-  <li>
-    <details open>
-      <summary>JavaScript</summary>
-      <ul>
-        <li>Avoid at all costs</li>
-        <li>
-          <details>
-            <summary>Unless</summary>
-            <ul>
-              <li>Avoid</li>
-              <li>
-                <details>
-                  <summary>At</summary>
-                  <ul>
-                    <li>Avoid</li>
-                    <li>At</li>
-                    <li>All</li>
-                    <li>Cost</li>
-                  </ul>
-                </details>
-              </li>
-              <li>All</li>
-              <li>Cost</li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </details>
-  </li>
-  <li>HTML</li>
-  <li>Special Thanks</li>
-</ul>
-      <details>
-        <summary>Show code</summary>
-        <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tree-view&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Table of Contents<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>What is web development?<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    CSS
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Specificity<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Properties<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">details</span> <span class="hljs-attr">open</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid at all costs<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Unless<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>At<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Avoid<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>At<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Cost<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Cost<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Special Thanks<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
-      </details>
-    </div>
-      </div>
-    </section>
-
   </main>
 </body>
 </html>
