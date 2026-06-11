@@ -1,107 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Favorite Links</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/XP.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/XP.css">
+  <link rel="stylesheet" href="docs.css">
 </head>
 
-<body>
-  <main class="desktop">
-    <section class="window main-window">
-      <div class="title-bar">
-        <div class="title-bar-text">favorite-links.exe</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
+<body class="surface">
+  <aside>
+    <ul class="tree-view">
+      <li><a href="#intro">Intro</a></li>
+      <li>
+        <a href="#links">Links</a>
+        <ul>
+          <li><a href="#watch">Watch</a></li>
+          <li><a href="#social">Social</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#worklinks">Worklinks</a></li>
+          <li><a href="#gw2">GW2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Favorite Links</h1>
+    <hr>
+
+    <h2 id="intro">Intro</h2>
+    <p>My small Windows XP-style launchpad for useful links.</p>
+
+    <h2 id="links">Links</h2>
+
+    <section class="component">
+      <h3 id="watch">Watch</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://www.youtube.com', '_blank')">Youtube</button>
+          <button onclick="window.open('https://www.twitch.tv', '_blank')">Twitch</button>
         </div>
       </div>
+    </section>
 
-      <div class="window-body">
-        <h1>Favorite Links</h1>
-        <p>My tiny Windows XP-style internet launchpad.</p>
+    <section class="component">
+      <h3 id="social">Social</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://app.thestorygraph.com', '_blank')">Storygraph</button>
+          <button onclick="window.open('https://linktr.ee/admin', '_blank')">Linktree</button>
+        </div>
+      </div>
+    </section>
 
-        <section class="component">
-          <h3 id="watch">Watch</h3>
-          <div class="button-grid">
-            <a class="xp-link" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
-            <a class="xp-link" href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer">Twitch</a>
-          </div>
-        </section>
+    <section class="component">
+      <h3 id="workflow">Workflow</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://scholar.google.com', '_blank')">Scholar</button>
+          <button onclick="window.open('https://www.chat.openai.com', '_blank')">ChatGPT</button>
+          <button onclick="window.open('https://notebooklm.google/', '_blank')">NotebookLM</button>
+          <button onclick="window.open('https://www.deepl.com/en/translator', '_blank')">DeepL</button>
+          <button onclick="window.open('https://app.grammarly.com/', '_blank')">Grammarly</button>
+          <br><br>
+          <button onclick="window.open('https://www.perplexity.ai', '_blank')">Perplexity</button>
+          <button onclick="window.open('https://typeset.io/', '_blank')">Scispace</button>
+        </div>
+      </div>
+    </section>
 
-        <section class="component">
-          <h3 id="social">Social</h3>
-          <div class="button-grid">
-            <a class="xp-link" href="https://app.thestorygraph.com" target="_blank" rel="noopener noreferrer">Storygraph</a>
-            <a class="xp-link" href="https://linktr.ee/admin" target="_blank" rel="noopener noreferrer">Linktree</a>
-          </div>
-        </section>
+    <section class="component">
+      <h3 id="tools">Tools</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://lookscanned.io/scan', '_blank')">Scanned</button>
+          <button onclick="window.open('https://www.nayuki.io/page/qr-code-generator-library', '_blank')">QR-code</button>
+          <button onclick="window.open('https://coolors.co/generate', '_blank')">Colors</button>
+          <button onclick="window.open('https://archive.md/', '_blank')">Archive</button>
+          <button onclick="window.open('http://playlist-manager.com/#/login', '_blank')">Playlist</button>
+          <br><br>
+          <button onclick="window.open('https://cobalt.tools/', '_blank')">Cobalt</button>
+          <button onclick="window.open('https://www.overleaf.com/learn/latex/Mathematical_expressions', '_blank')">LaTeX</button>
+          <button onclick="window.open('https://send-anywhere.com/', '_blank')">Send-Any</button>
+          <button onclick="window.open('https://www.swisstransfer.com/en-ch', '_blank')">Swiss-trans</button>
+          <button onclick="window.open('https://delphi.tools', '_blank')">Delphi.Tools</button>
+        </div>
+      </div>
+    </section>
 
-        <section class="component">
-          <h3 id="workflow">Workflow</h3>
-          <div class="button-grid">
-            <a class="xp-link" href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Scholar</a>
-            <a class="xp-link" href="https://www.chat.openai.com" target="_blank" rel="noopener noreferrer">ChatGPT</a>
-            <a class="xp-link" href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
-            <a class="xp-link" href="https://www.deepl.com/en/translator" target="_blank" rel="noopener noreferrer">DeepL</a>
-            <a class="xp-link" href="https://app.grammarly.com/" target="_blank" rel="noopener noreferrer">Grammarly</a>
-            <a class="xp-link" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">Perplexity</a>
-            <a class="xp-link" href="https://typeset.io/" target="_blank" rel="noopener noreferrer">Scispace</a>
-          </div>
-        </section>
+    <section class="component">
+      <h3 id="worklinks">Worklinks</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://aok.pte.hu/hu/egyseg/1670', '_blank')">AOK-PhD</button>
+        </div>
+      </div>
+    </section>
 
-        <section class="component">
-          <h3 id="tools">Tools</h3>
-          <div class="button-grid">
-            <a class="xp-link" href="https://lookscanned.io/scan" target="_blank" rel="noopener noreferrer">Scanned</a>
-            <a class="xp-link" href="https://www.nayuki.io/page/qr-code-generator-library" target="_blank" rel="noopener noreferrer">QR-code</a>
-            <a class="xp-link" href="https://coolors.co/generate" target="_blank" rel="noopener noreferrer">Colors</a>
-            <a class="xp-link" href="https://archive.md/" target="_blank" rel="noopener noreferrer">Archive</a>
-            <a class="xp-link" href="http://playlist-manager.com/#/login" target="_blank" rel="noopener noreferrer">Playlist</a>
-            <a class="xp-link" href="https://cobalt.tools/" target="_blank" rel="noopener noreferrer">Cobalt</a>
-            <a class="xp-link" href="https://www.overleaf.com/learn/latex/Mathematical_expressions" target="_blank" rel="noopener noreferrer">LaTeX</a>
-            <a class="xp-link" href="https://send-anywhere.com/" target="_blank" rel="noopener noreferrer">Send-Any</a>
-            <a class="xp-link" href="https://www.swisstransfer.com/en-ch" target="_blank" rel="noopener noreferrer">Swiss-trans</a>
-            <a class="xp-link" href="https://delphi.tools" target="_blank" rel="noopener noreferrer">Delphi.Tools</a>
-          </div>
-        </section>
+    <h2 id="gaming">Gaming</h2>
 
-        <section class="component">
-          <h3 id="worklinks">Worklinks</h3>
-          <div class="button-grid">
-            <a class="xp-link" href="https://aok.pte.hu/hu/egyseg/1670" target="_blank" rel="noopener noreferrer">AOK-PhD</a>
-          </div>
-        </section>
-
-        <section class="component">
-          <h3 id="gaming">Gaming</h3>
-
-          <fieldset>
-            <legend>GW2</legend>
-
-            <div class="button-grid">
-              <a class="xp-link" href="https://gw2efficiency.com/" target="_blank" rel="noopener noreferrer">Efficiency</a>
-              <a class="xp-link" href="https://wiki.guildwars2.com/wiki/Event_timers" target="_blank" rel="noopener noreferrer">ETimer</a>
-              <a class="xp-link" href="http://en.gw2skills.net/editor/" target="_blank" rel="noopener noreferrer">GW2Skills</a>
-              <a class="xp-link" href="https://guildjen.com/" target="_blank" rel="noopener noreferrer">Guildjen</a>
-              <a class="xp-link" href="https://gw2lunchbox.com/MaterialUpgrades.html" target="_blank" rel="noopener noreferrer">MaterialUG</a>
-              <a class="xp-link" href="https://drf.rs/dashboard/livetracker" target="_blank" rel="noopener noreferrer">Tracker</a>
-              <a class="xp-link" href="https://docs.google.com/spreadsheets/d/1EdqjqmmSxl5zfRJFUN8fa8ehkwJg1n-UHdlgbWh2of0/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Fishing</a>
-            </div>
-          </fieldset>
-        </section>
+    <section class="component">
+      <h3 id="gw2">GW2</h3>
+      <div>
+        <div class="example">
+          <button onclick="window.open('https://gw2efficiency.com/', '_blank')">Efficiency</button>
+          <button onclick="window.open('https://wiki.guildwars2.com/wiki/Event_timers', '_blank')">ETimer</button>
+          <button onclick="window.open('http://en.gw2skills.net/editor/', '_blank')">GW2Skills</button>
+          <button onclick="window.open('https://guildjen.com/', '_blank')">Guildjen</button>
+          <button onclick="window.open('https://gw2lunchbox.com/MaterialUpgrades.html', '_blank')">MaterialUG</button>
+          <button onclick="window.open('https://drf.rs/dashboard/livetracker', '_blank')">Tracker</button>
+          <button onclick="window.open('https://docs.google.com/spreadsheets/d/1EdqjqmmSxl5zfRJFUN8fa8ehkwJg1n-UHdlgbWh2of0/edit?gid=0#gid=0', '_blank')">Fishing</button>
+        </div>
       </div>
     </section>
   </main>
-
-  <div class="taskbar">
-    <button class="start-button">start</button>
-    <div class="taskbar-item">favorite-links.exe</div>
-  </div>
 </body>
+
 </html>
